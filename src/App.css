@@ -21,9 +21,9 @@ html {
   background: transparent; /* Optional: just make scrollbar invisible */
 }
 /* Optional: show position indicator in red */
-::-webkit-scrollbar-thumb {
-  /* background: #ff0000; */
-}
+/* ::-webkit-scrollbar-thumb {
+  background: #ff0000;
+} */
 
 .invisible-scrollbar::-webkit-scrollbar {
   display: none;
@@ -55,12 +55,16 @@ h4 {
   opacity: 0.8;
 }
 
+.headingWhite {
+  color: #fff;
+}
+
 .hero {
   padding: 100px;
 }
 
 button {
-  margin: 30px;
+  margin-top: 20px;
   width: 160px;
   height: 50px;
   background-color: #ff3147;
@@ -76,15 +80,15 @@ button {
 
 .pinkCard {
   background: #ff3147;
-  height: 390px;
-  width: 274px;
+  height: 330px;
+  width: 232px;
   color: #fafafa;
   text-align: center;
   opacity: 0.86;
 }
 
 .cardButton {
-  margin: 30px;
+  /* margin: 30px; */
   width: 165px;
   height: 41px;
   background-color: #f4f4f4;
@@ -103,7 +107,7 @@ button {
 }
 
 .feedback {
-  padding-left: 300px;
+  padding-left: 220px;
   width: 878px;
 }
 
@@ -277,4 +281,8 @@ a.active.nav-link {
 
 .card-back {
   transform: rotateY(180deg);
+}
+
+p {
+  font-size: 0.9rem;
 }

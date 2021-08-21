@@ -25,9 +25,9 @@ const Services = () => {
             </p>
           </div>
 
-          <div class="container-fluid">
-            <div class="row flex-row flex-nowrap scrolling-wrapper">
-              <div class="col-3">
+          <div className="container-fluid">
+            <div className="row flex-row flex-nowrap scrolling-wrapper">
+              <div className="col-3">
                 <div className="card-block">
                   <div className="">
                     <div className="card-front position-relative">
@@ -37,16 +37,16 @@ const Services = () => {
                 </div>
               </div>
 
-              <div class="col-3">
+              <div className="col-3">
                 <div className="card-block">
                   <div className="card-inner">
                     <div className="card-front">
                       <img src={one} className="img img-fluid" />
                     </div>
                     <div className="card-back">
-                      <div class="card-block pinkCard">
-                        <img src={icon} className="mt-5 pt-3 mb-4" />
-                        <h4>WEB DEVELOPMENT</h4>
+                      <div className="card-block pinkCard">
+                        <img src={icon} className="mt-4 mb-4" />
+                        <h5 className="headingWhite pb-1">WEB DEVELOPMENT</h5>
                         <p>
                           Morbi sed lacus nec risus finibus feugiat et fermentum
                           nibh. Pellentesque
@@ -62,16 +62,16 @@ const Services = () => {
                 </div>
               </div>
 
-              <div class="col-3">
+              <div className="col-3">
                 <div className="card-block">
                   <div className="card-inner">
                     <div className="card-front">
                       <img src={two} className="img img-fluid" />
                     </div>
                     <div className="card-back">
-                      <div class="card-block pinkCard">
-                        <img src={icon} className="mt-5 pt-3 mb-4" />
-                        <h4>WEB DEVELOPMENT</h4>
+                      <div className="card-block pinkCard">
+                        <img src={icon} className="mt-4 mb-4" />
+                        <h5 className="headingWhite pb-1">WEB DEVELOPMENT</h5>
                         <p>
                           Morbi sed lacus nec risus finibus feugiat et fermentum
                           nibh. Pellentesque
@@ -87,16 +87,16 @@ const Services = () => {
                 </div>
               </div>
 
-              <div class="col-3">
+              <div className="col-3">
                 <div className="card-block">
                   <div className="card-inner">
                     <div className="card-front">
                       <img src={three} className="img img-fluid" />
                     </div>
                     <div className="card-back">
-                      <div class="card-block pinkCard">
-                        <img src={icon} className="mt-5 pt-3 mb-4" />
-                        <h4>WEB DEVELOPMENT</h4>
+                      <div className="card-block pinkCard">
+                        <img src={icon} className="mt-4 mb-4" />
+                        <h5 className="headingWhite pb-1">WEB DEVELOPMENT</h5>
                         <p>
                           Morbi sed lacus nec risus finibus feugiat et fermentum
                           nibh. Pellentesque

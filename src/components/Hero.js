@@ -23,7 +23,7 @@ const Hero = () => {
 
       <div className="container hero">
         <div className="row container px-5">
-          <div className="col-8 mt-5 pt-4">
+          <div className="col-8 mt-5">
             <h3>AWARD WINNING</h3>
             <h1 className="heading py-3">DIGITAL MARKETING AGENCY</h1>
             <p className="pb-3 w-75">
@@ -96,28 +96,28 @@ const Hero = () => {
 
           <Tab.Container id="left-tabs-example" defaultActiveKey="first">
             <Row>
-              <Col sm={1}></Col>
+              {/* <Col sm={1}></Col> */}
               <Col sm={7}>
                 <Tab.Content>
                   <Tab.Pane eventKey="first">
-                    <div className="container text-center mt-4">
+                    <div className="container text-center mt-2">
                       <img src={sushi} className="img img-fluid" />
                     </div>
                   </Tab.Pane>
                   <Tab.Pane eventKey="second">
-                    <div className="container text-center mt-4">
+                    <div className="container text-center mt-2">
                       <img src={orange} className="img img-fluid" />
                     </div>
                   </Tab.Pane>
                   <Tab.Pane eventKey="third">
-                    <div className="container text-center mt-4">
+                    <div className="container text-center mt-2">
                       <img src={kitchen} className="img img-fluid " />
                     </div>
                   </Tab.Pane>
                 </Tab.Content>
               </Col>
 
-              <Col sm={3}>
+              <Col sm={5}>
                 <Nav variant="pills" className="flex-column">
                   <Nav.Item className="tab">
                     <Nav.Link eventKey="first">
@@ -167,31 +167,31 @@ const Hero = () => {
             <h1 className="py-3">OUR COMPANY'S GROWTH</h1>
           </div>
           <div className="row container px-5 pt-3">
-            <div class="container-fluid">
-              <div class="row flex-row flex-nowrap">
-                <div class="col-3 ">
-                  <div class="card card-block mx-5 text-center">
+            <div className="container-fluid">
+              <div className="row flex-row flex-nowrap">
+                <div className="col-3 ">
+                  <div className="card card-block mx-3 text-center">
                     <img src={heart} className="icon my-3" />
                     <h1>199+</h1>
                     <p>Satisfied Customers</p>
                   </div>
                 </div>
-                <div class="col-3">
-                  <div class="card card-block mx-5 text-center">
+                <div className="col-3">
+                  <div className="card card-block mx-3 text-center">
                     <img src={clock} className="icon my-3" />
                     <h1>1591+</h1>
                     <p>Days Of Operation</p>
                   </div>
                 </div>
-                <div class="col-3">
-                  <div class="card card-block mx-5 text-center">
+                <div className="col-3">
+                  <div className="card card-block mx-3 text-center">
                     <img src={tick} className="icon my-3" />
                     <h1>283+</h1>
                     <p>Projects Completed</p>
                   </div>
                 </div>
-                <div class="col-3">
-                  <div class="card card-block mx-5 text-center">
+                <div className="col-3">
+                  <div className="card card-block mx-3 text-center">
                     <img src={prize} className="icon my-3" />
                     <h1>75+</h1>
                     <p>Awards Won</p>

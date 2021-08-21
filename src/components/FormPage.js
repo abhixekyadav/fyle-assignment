@@ -1,5 +1,4 @@
 import React from "react";
-import { MDBContainer, MDBRow, MDBCol, MDBInput, MDBBtn } from "mdbreact";
 
 const FormPage = () => {
   return (
@@ -9,6 +8,7 @@ const FormPage = () => {
         type="button"
         data-toggle="modal"
         data-target="#exampleModalCenter"
+        className="ml-3"
       >
         CONTACT US
       </button>
@@ -17,7 +17,7 @@ const FormPage = () => {
       <div
         className="modal fade"
         id="exampleModalCenter"
-        tabindex="-1"
+        tabIndex="-1"
         role="dialog"
         aria-labelledby="exampleModalCenterTitle"
         aria-hidden="true"
