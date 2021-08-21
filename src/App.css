@@ -1,38 +1,280 @@
-.App {
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  background: #ffffff no-repeat center center/cover;
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 0; /* Remove scrollbar space */
+  background: transparent; /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+  /* background: #ff0000; */
+}
+
+.invisible-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.scrolling-wrapper {
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+.footer {
+  left: 0px;
+  height: 232px;
+  background-color: #ff3147;
+}
+
+.heading {
+  font-weight: bolder;
+  font-size: 4rem;
+}
+
+h3 {
+  color: #ff3147;
+  opacity: 0.8;
+}
+
+h4 {
+  color: #ff3147;
+  opacity: 0.8;
+}
+
+.hero {
+  padding: 100px;
+}
+
+button {
+  margin: 30px;
+  width: 160px;
+  height: 50px;
+  background-color: #ff3147;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.serviceBg {
+  background-color: #fafafa;
+}
+
+.pinkCard {
+  background: #ff3147;
+  height: 390px;
+  width: 274px;
+  color: #fafafa;
   text-align: center;
+  opacity: 0.86;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.cardButton {
+  margin: 30px;
+  width: 165px;
+  height: 41px;
+  background-color: #f4f4f4;
+  border: none;
+  border-radius: 4px;
+  color: #ff3147;
+  font-weight: bold;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.icon {
+  height: 2rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.card:hover {
+  box-shadow: 3px 6px 20px #672c2c1f;
 }
 
-.App-link {
-  color: #61dafb;
+.feedback {
+  padding-left: 300px;
+  width: 878px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+strong {
+  color: #ff3147;
+}
+
+.tab {
+  background-color: #f6f6f6;
+  color: #000000 !important;
+}
+
+a.nav-link,
+a.nav-link:hover {
+  color: #000000;
+}
+
+a.active.nav-link {
+  background-color: #ff3147 !important;
+}
+
+/* modal */
+
+.get-in-touch {
+  max-width: 800px;
+  position: relative;
+}
+
+.title {
+  color: #000000;
+  font-weight: bold;
+}
+
+.contact-form .form-field {
+  position: relative;
+  margin: 32px 0;
+}
+.contact-form .input-text {
+  display: block;
+  width: 100%;
+  height: 36px;
+  border-width: 0 0 2px 0;
+  border-color: #6f718f99;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+}
+.contact-form .input-text:focus {
+  outline: none;
+}
+.contact-form .input-text:focus + .label,
+.contact-form .input-text.not-empty + .label {
+  -webkit-transform: translateY(-24px);
+  transform: translateY(-24px);
+}
+
+.contact-form .label {
+  position: absolute;
+  left: 20px;
+  bottom: 11px;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #6f718f99;
+  cursor: text;
+  transition: -webkit-transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+}
+.contact-form .submit-btn {
+  display: inline-block;
+  background-color: #ff3366;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  width: 386px;
+  height: 52px;
+  cursor: pointer;
+}
+
+/* Customize the label (the container) */
+.cuntainer {
+  display: block;
+  position: relative;
+  padding-left: 36px;
+  margin-bottom: -28px;
+  margin-top: -10px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.cuntainer input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  border-width: 3px;
+  border-color: #ff3366;
+  border-radius: 4px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.cuntainer:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.cuntainer input:checked ~ .checkmark {
+  background-color: #ff3366;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.cuntainer input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.cuntainer .checkmark:after {
+  left: 8px;
+  top: 2px;
+  width: 9px;
+  height: 17px;
+  border: solid white;
+  border-width: 0px 4px 4px 0;
+  transform: rotate(45deg);
+}
+
+/* CARD */
+
+.card-inner {
+  position: relative;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.card-block:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.card-back {
+  transform: rotateY(180deg);
 }
